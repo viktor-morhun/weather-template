@@ -1,0 +1,150 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+body {
+  background-color: rgba(51, 153, 204, 1);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+  color: rgba(255, 255, 255, 1);
+  min-width: 1240px;
+}
+
+.weather__title {
+display: inline-block;
+font-size: 21px;
+font-weight: 400;
+}
+
+.weather__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+i.wi--title {
+  color: rgba(255, 255, 255, 1);
+}
+
+.weather {
+  margin: 60px auto;
+  width: 1170px;
+  height: 746px;
+}
+
+.container {
+  width: 1170px;
+  min-height: 591px;
+  margin: 35px 0;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.container:hover .weather__element:not(:hover) {
+  opacity: 0.7;
+}
+
+.weather__list {
+  font-size: 0;
+}
+
+.weather__element {
+  display: inline-block;
+  text-align: center;
+  height: 147px;
+  border: 2px solid white;
+  cursor: pointer;
+  padding: 26px 0;
+}
+
+.weather__element--lisbon,
+.weather__element--san-francisco {
+  width: 50%;
+}
+
+.weather__element--paris,
+.weather__element--belgrade,
+.weather__element--venice,
+.weather__element--tel-avive,
+.weather__element--cair,
+.weather__element--new-york,
+.weather__element--new-delhi,
+.weather__element--tokyo {
+  width: 25%;
+}
+
+.weather__element--sydney {
+  width: 100%;
+}
+
+.weather__element--lisbon {
+  background-color: rgba(51, 153, 204, 1);
+}
+
+.weather__element--paris {
+  background-color: rgba(51, 204, 204, 1);
+}
+
+.weather__element--belgrade {
+  background-color: rgba(153, 102, 153, 1);
+}
+
+.weather__element--venice {
+  background-color: rgba(194, 71, 71, 1);
+}
+
+.weather__element--tel-avive {
+  background-color: rgba(226, 103, 74, 1);
+}
+
+.weather__element--cair {
+  background-color: rgba(255, 204, 102, 1);
+}
+
+.weather__element--new-york {
+  background-color: rgba(153, 204, 153, 1);
+}
+
+.weather__element--new-delhi {
+  background-color: rgba(102, 153, 153, 1);
+}
+
+.weather__element--san-francisco {
+  background-color: rgba(204, 102, 153, 1);
+}
+
+.weather__element--tokyo {
+  background-color: rgba(51, 153, 102, 1);
+}
+
+.weather__element--sydney {
+  background-color: rgba(102, 102, 153, 1);
+}
+
+.wi {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 42px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.weather__city,
+.weather__temperature {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+.weather__temperature {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-top: -30px;
+}
